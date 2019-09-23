@@ -11,3 +11,7 @@
 	echo 'testing 3';
 ?>
 
+<?php 
+	echo 'testing 4';
+?>
+
