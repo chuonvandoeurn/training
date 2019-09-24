@@ -15,6 +15,3 @@
 	echo 'testing 4';
 ?>
 <?php echo 'hello' ?>
-
-
-fjldjf
