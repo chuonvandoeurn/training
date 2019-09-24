@@ -50,52 +50,5 @@ class Categories extends CI_Controller {
         $data['category']=$this->category->get_id($id);
         $this->load->view('category/edit', $data);
     }
-
-    // public function create()
-    // {
-    //     $category= array(
-    //         array(
-    //         'name'=>'thi',
-    //         'description'=>'fuck boy'
-    //         ),
-    //         array(
-    //         'name'=>'thyda',
-    //         'description'=>'hole boy'
-    //         ),
-    //         array(
-    //         'name'=>'that',
-    //         'description'=>'hey boy'
-    //         )
-    //     );
-    //     $this->db->insert_batch('categories', $category);
-        
-    // }
-    // public function delete()
-    // {
-    //     $this->db->where('id>', 5);
-    //     $this->db->delete('categories');
-    // }
-   // public function index()
-    // {
-       
-    //    // $categories= $this->db->query('SELECT * FROM categories')->result_array();
-    //    // foreach ($categories as  $category) {
-    //    //          echo $category['id']."<br>";
-    //    //          echo $category['name']."<br>";
-    //    //          echo $category['description']."<br>";                                                         
-    //    // }
-    //    // $this->db->select('id')
-    //    // ->select('name')
-    //    // ->select('description');
-    //    // $this->db->from('categories');
-    //    // $categories=$this->db->get()->result();
-    //    // foreach ($categories as  $category) {
-    //    //     echo $category->id."<br>";
-    //    //     echo $category->name."<br>";
-    //    //     echo $category->description."<br>";
-    //    // }
-      
-        
-    // }
 }
 
