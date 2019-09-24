@@ -5,8 +5,8 @@
 </head>
 <body>
 	
-	<form action="<?php echo base_url(); ?>/categories/edit/<?php echo $category->id  ?>" method="post">	
-		<?php $this->load->view('category/form',$category); ?>
+	<form action="<?php echo base_url(); ?>/sales/edit/<?php echo $sale->Code  ?>" method="post">	
+		<?php $this->load->view('sale/form',$sale); ?>
 	</form>
 </body>
 </html>
