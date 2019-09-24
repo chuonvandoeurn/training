@@ -16,7 +16,7 @@ class Sales extends CI_Controller {
     }
     public function create()
     {
-        if (!empty($this->input->post('submit'))) {
+        if ($this->input->post('submit')) {
             $sale=array(
             'code'=>$this->input->post('code'),
             'name'=>$this->input->post('name'),
@@ -39,12 +39,13 @@ class Sales extends CI_Controller {
    
     public function edit($id)
     {
-         if (!empty($this->input->post('submit')))
-        {
+        if ($this->input->post('submit')) {
             $sale=array(
-                'name'=>$this->input->post('name'),
-                'description'=>$this->input->post('description')
-            );    
+            'code'=>$this->input->post('code'),
+            'name'=>$this->input->post('name'),
+            'username'=>$this->input->post('username'),
+            'password'=>$this->input->post('password')
+            );   
             if($this->sale->edit($sale,$id) > 0)
                   redirect(base_url().'sales','refresh');
         }
@@ -52,4 +53,6 @@ class Sales extends CI_Controller {
         $this->load->view('sale/edit', $data);
     }
  }
+
+
 

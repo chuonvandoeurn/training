@@ -6,4 +6,4 @@
 <input type="text" name="username" id="username" value="<?php echo (isset($sale))? $sale->Username: ' ' ?>"/>
 <label for="password">Password</label>
 <input type="text" name="password" id="password" value="<?php echo (isset($sale))? $sale->Password: ' ' ?>"/>
-<input type="submit" value="<?php echo (isset($sale))? 'update': 'save' ?>" name="submit" ;>
+<input type="submit" value="<?php echo (isset($sale))? 'update': 'save' ?>" name="submit" id="submit" ;>

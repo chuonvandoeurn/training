@@ -22,28 +22,28 @@
 					type: 'POST',
 					dataType: 'json',
 					data: {
-						code: code;
-						name: name;
-						username:username ;
+						code: code,
+						name: name,
+						username:username ,
 						password:password
 
 					},
 					success: function(response) {
-						if(resopnse.status==='save'){
+						if(response.status==='save'){
 							$('#code').val('');
 							$('#name').val('');
 							$('#username').val('');
 							$('#password').val('');
 						}
 					}
-					fail: function (resopnse) {
-						if(resopnse.status!==='save'){
+					fail: function (response) {
+						if(response.status!=='save'){
 							$('input').css({
 								color: 'red';
 							});
 						}
 					}
-				})
+				});
 			});
 		});
 	</script>
