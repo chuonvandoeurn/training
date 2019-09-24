@@ -9,11 +9,11 @@ class Sales extends CI_Controller {
        $this->load->model('Sale_model','sale');
     }
 
-    // public function index()
-    // { 
-    //      $data['sales']= $this->sale->get_all();
-    //      $this->load->view('sale/index', $data);
-    // }
+        public function index()
+    {
+         $data['sales']= $this->sale->get_all();
+         $this->load->view('sale/index', $data);
+    }
     public function create()
     {
         if (!empty($this->input->post('submit'))) {

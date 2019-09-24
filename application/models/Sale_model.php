@@ -3,11 +3,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Sale_model extends CI_Model {
 
-	// public function get_all()
-	// {
-	// 	$this->db->select('*');
- //        return $this->db->get('admin')->result();
-	// }
+	public function get_all()
+	{
+		$this->db->select('*');
+        return $this->db->get('admin')->result();
+	}
 	public function create($data)
 	{
 		$this->db->insert('admin', $data);

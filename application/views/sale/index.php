@@ -6,24 +6,25 @@
       <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     </head>
     <body>
-  		<a href="<?php echo base_url(); ?>categories/create">Add new</a>
+  		<a href="<?php echo base_url(); ?>Sales/create">Add new</a>
   		<table id="example" >
         <thead>
             <tr>
-                <th>Id</th>
+                <th>Code</th>
                 <th>Name</th>
-                <th>Description</th>
-                <th>Action</th>
+                <th>Username</th>
+                <th>Password</th>
             </tr>
             </thead>
             <tbody>
-  			<?php foreach ($categories as $category): ?>
+  			<?php foreach ($sales as $sale): ?>
                 <tr>
-                  <td><?php echo $category->id; ?></td>
-                  <td><?php echo $category->name; ?></td>
-                  <td><?php echo $category->description; ?></td>
-                  <td><a href="<?php echo base_url(); ?>categories/edit/<?php echo $category->id ?>">Edit</a>|
-                      <a href="<?php echo base_url(); ?>categories/delete/<?php echo $category->id ?>">Delete</a>
+                  <td><?php echo $sale->Code; ?></td>
+                  <td><?php echo $sale->Name; ?></td>
+                  <td><?php echo $sale->Username; ?></td>
+                  <td><?php echo $sale->Password; ?></td>
+                  <td><a href="<?php echo base_url(); ?>sales/edit/<?php echo $sale->Code ?>">Edit</a>|
+                      <a href="<?php echo base_url(); ?>sales/delete/<?php echo $sale->Code ?>">Delete</a>
                   </td>
                 </tr>
           <?php endforeach ?>  
